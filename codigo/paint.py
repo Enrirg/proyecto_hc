@@ -33,10 +33,11 @@ def irregular_4(start, end):
     down()
     begin_fill()
     
-    forward = (end.x-start.x)
-    arriba = (forward-end.x)
-    left = (arriba-end.x)
-    down = (left-end.x)
+
+    forward(end.x-start.x)
+    arriba(forward-end.x)
+    left(arriba-end.x)
+    down(left-end.x)
 
     end_fill()
 
