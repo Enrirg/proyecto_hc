@@ -25,9 +25,20 @@ def circle(start, end):
     "Draw circle from start to end."
     pass  # TODO
 
-def rectangle(start, end):
+def irregular_4(start, end):
+
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    forward = (end.x-start.x)
+    arriba = (forward-end.x)
+    left = (arriba-end.x)
+    down = (left-end.x)
+
+    end_fill()
 
 def triangle(start, end):
     "Draw triangle from start to end."
