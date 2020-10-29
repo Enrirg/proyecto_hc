@@ -97,4 +97,4 @@ onkey(lambda: store('shape', irregular_4), 'i')
 onkey(lambda: store('shape', triangle), 't')
 
 onkey(lambda: store('shape', pentagon), 'p'
-        done()
+done()
