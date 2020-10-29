@@ -29,20 +29,20 @@ def move():
 
         col = randint(1,4)
         if col == 1:
-            square(head.x, head.y, 9,color="blue")
+            square(head.x, head.y, 9,"blue")
             update()
 
         elif col == 2:
-            square(head.x, head.y, 9,color="green")
+            square(head.x, head.y, 9,"green")
             update()
 
 
         elif col == 3:
-            square(head.x, head.y, 9,color="yellow")
+            square(head.x, head.y, 9,"yellow")
             update()
         
         elif col == 4:
-            square(head.x, head.y, 9,color="black")
+            square(head.x, head.y, 9,"black")
             update()
 
 
@@ -69,22 +69,22 @@ def move():
             update()
 
         elif col == 2:
-            square(body.x, body.y, 9,color="green")
+            square(body.x, body.y, 9,"green")
             update()
 
 
         elif col == 3:
-            square(body.x, body.y, 9,color="yellow")
+            square(body.x, body.y, 9,"yellow")
             update()
 
         elif col == 4:
-            square(body.x, body.y, 9,color="black")
+            square(body.x, body.y, 9,"black")
             update()
 
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, randint(1, 100))
+    ontimer(move,100)
 
 
 
