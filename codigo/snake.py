@@ -27,7 +27,7 @@ def move():
 
     if not inside(head) or head in snake:
 
-        col = randint(1,4)
+        col = randint(1,5)
         if col == 1:
             square(head.x, head.y, 9,"blue")
             update()
@@ -44,6 +44,10 @@ def move():
         elif col == 4:
             square(head.x, head.y, 9,"black")
             update()
+        elif col == 5:
+            square(head.x, head.y, 9,"white")
+            update()
+
 
 
 
@@ -61,25 +65,29 @@ def move():
     clear()
 
     for body in snake:
-        col2= randint(1,4)
+        col2= randint(1,5)
         
 
-        if col == 1:
+        if col2 == 1:
             square(body.x, body.y, 9, 'black')
             update()
 
-        elif col == 2:
+        elif col2 == 2:
             square(body.x, body.y, 9,"green")
             update()
 
 
-        elif col == 3:
+        elif col2 == 3:
             square(body.x, body.y, 9,"yellow")
             update()
 
-        elif col == 4:
+        elif col2 == 4:
             square(body.x, body.y, 9,"black")
             update()
+        elif col2 == 5:
+            square(head.x, head.y, 9,"white")
+            update()
+
 
 
     square(food.x, food.y, 9, 'green')
