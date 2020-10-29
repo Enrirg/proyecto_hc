@@ -43,8 +43,26 @@ def irregular_4(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
 
+    for count in range (3):
+        forward(end.x - start.x)
+        left(60)
+
+
+def pentagon(start, end):
+    "Draw triangle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range (5):
+        forward(end.x - start.x)
+        left(108)
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
@@ -56,10 +74,11 @@ def tap(x, y):
         end = vector(x, y)
         shape(start, end)
         state['start'] = None
-
 def store(key, value):
     "Store value in state at key."
     state[key] = value
+
+
 
 state = {'start': None, 'shape': line}
 setup(420, 420, 370, 0)
@@ -76,4 +95,6 @@ onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
 onkey(lambda: store('shape', irregular_4), 'i')
 onkey(lambda: store('shape', triangle), 't')
-done()
+
+onkey(lambda: store('shape', pentagon), 'p'
+        done()
