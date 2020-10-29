@@ -1,3 +1,2 @@
 # proyecto_hc
-añadiremos colores nuevos 
-cambio
+añadiremos colores nuevos
