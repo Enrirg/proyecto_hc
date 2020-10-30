@@ -1,4 +1,5 @@
 # proyecto_hc
+<<<<<<< HEAD
 Authors: Santiago Ordóñez
 	 Alan Cuevas
 	 Enrique Ramírez
@@ -13,4 +14,23 @@ Game 2: Tron
 Game 3: Draw
 
 Game 4: Snake
+=======
+
+añadiremos colores nuevos 
+
+
+
+
+
+
+
+
+
+
+
+
+
+tron.py: We changed the color trails of the motorcycles.
+
+>>>>>>> 7f57e212fbf796f40aaed92caa3c0c3df9dc396e
 
