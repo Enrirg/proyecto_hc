@@ -108,4 +108,4 @@ onkey(lambda: store('shape', circle), 'c')
 onkey(lambda: store('shape', horizontal), 'h')
 onkey(lambda: store('shape', triangle), 't')
 onkey(lambda: store('shape', pentagon), 'p'
-        done()
+done()
