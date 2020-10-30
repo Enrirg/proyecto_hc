@@ -33,31 +33,9 @@ def move():
 
     if not inside(head) or head in snake:
 
-        col = randint(1,5)
-        if col == 1:
-            square(head.x, head.y, 9,"blue")
-            update()
-
-        elif col == 2:
-            square(head.x, head.y, 9,"green")
-            update()
-
-
-        elif col == 3:
-            square(head.x, head.y, 9,"yellow")
-            update()
-        
-        elif col == 4:
-            square(head.x, head.y, 9,"black")
-            update()
-        elif col == 5:
-            square(head.x, head.y, 9,"white")
-            update()
-
-
-
-
-   return
+        square(head.x, head.y, 9,"red")
+        update()
+        return
 
     snake.append(head)
 
