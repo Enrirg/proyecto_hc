@@ -1,3 +1,8 @@
+# Program of the classical snake game, it which the animal eats and it grows
+#Team members: Alan Cuevas, Enrrique Ramirez, Santiago Ordoñez.  
+
+
+
 from turtle import *
 from random import randrange
 from freegames import square, vector
@@ -8,7 +13,8 @@ from random import randint
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
-col2 = 0
+colors = ["blue", "black","white", "green", "grey"]
+col2 = randint(0,len(colors)-1)
 
 def change(x, y):
     "Change snake direction."
@@ -51,7 +57,7 @@ def move():
 
 
 
-        return
+   return
 
     snake.append(head)
 
@@ -64,30 +70,10 @@ def move():
 
     clear()
 
+
     for body in snake:
-        col2= randint(1,5)
-        
-
-        if col2 == 1:
-            square(body.x, body.y, 9, 'black')
-            update()
-
-        elif col2 == 2:
-            square(body.x, body.y, 9,"green")
-            update()
-
-
-        elif col2 == 3:
-            square(body.x, body.y, 9,"yellow")
-            update()
-
-        elif col2 == 4:
-            square(body.x, body.y, 9,"black")
-            update()
-        elif col2 == 5:
-            square(head.x, head.y, 9,"white")
-            update()
-
+        square(head.x, head.y, 9,colors[col2])
+        update()
 
 
     square(food.x, food.y, 9, 'green')
