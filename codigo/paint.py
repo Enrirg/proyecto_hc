@@ -1,3 +1,7 @@
+# The paint game where you draw, you can build some figures like squuares, circles etc, just clicking the letter with which they began.
+
+#Team memebers: Alan Cuevas, Enrrique Ramirez, Santiago Ordoñez 
+
 from turtle import *
 from freegames import vector
 
@@ -23,9 +27,17 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
 
-def irregular_4(start, end):
+    for count in range (360):
+        forward(end.x - start.x)
+        left(1)
+ # TODO
+
+def horizontal(start, end):
 
     "Draw rectangle from start to end."
     up()
@@ -93,8 +105,7 @@ onkey(lambda: color('red'), 'R')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
-onkey(lambda: store('shape', irregular_4), 'i')
+onkey(lambda: store('shape', horizontal), 'h')
 onkey(lambda: store('shape', triangle), 't')
-
 onkey(lambda: store('shape', pentagon), 'p'
         done()
