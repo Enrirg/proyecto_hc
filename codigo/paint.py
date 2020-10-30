@@ -1,7 +1,5 @@
 # The paint game where you draw, you can build some figures like squuares, circles etc, just clicking the letter with which they began.
-
 #Team memebers: Alan Cuevas, Enrrique Ramirez, Santiago Ordoñez 
-
 from turtle import *
 from freegames import vector
 
@@ -22,7 +20,6 @@ def square(start, end):
     for count in range(4):
         forward(end.x - start.x)
         left(90)
-
     end_fill()
 
 def circle(start, end):
@@ -35,7 +32,6 @@ def circle(start, end):
     for count in range (360):
         forward(end.x - start.x)
         left(1)
- # TODO
 
 def horizontal(start, end):
 
@@ -63,8 +59,6 @@ def triangle(start, end):
     for count in range (3):
         forward(end.x - start.x)
         left(60)
-
-
 def pentagon(start, end):
     "Draw triangle from start to end."
     up()
