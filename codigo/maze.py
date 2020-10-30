@@ -2,6 +2,7 @@
 Authors: Santiago Ordóñez
          Enrique Ramírez
          Alonso Cuevas
+Date: Oct-30-2020
 """
 
 from turtle import *
@@ -10,6 +11,7 @@ from freegames import line
 
 def draw():
     "Draw maze."
+    #Modified original color and width of the maze´s walls
     color('black')
     width(5)
 
@@ -28,7 +30,7 @@ def tap(x, y):
         up()
     else:
         down()
-
+#Modified user`s line color and width
     width(2)
     color('red')
     goto(x, y)
