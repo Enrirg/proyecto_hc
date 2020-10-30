@@ -1,3 +1,19 @@
 # proyecto_hc
+
 añadiremos colores nuevos 
-change
+
+
+
+
+
+
+
+
+
+
+
+
+
+tron.py: We changed the color trails of the motorcycles.
+
+
